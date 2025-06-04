@@ -2,42 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>HANGCODE – Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HANGCODE – Ultra AI Automation</title>
+  <link rel="icon" href="assets/hangcode_logo.png" />
+  <meta name="description" content="AI-driven automation systems for hospitals, labs, and enterprises. HANGCODE: Never Hang." />
   <link rel="stylesheet" href="style.css" />
   <script src="main.js" defer></script>
 </head>
 <body class="theme-light">
   <nav class="navbar">
-    <img src="assets/hangcode_logo.png" alt="HANGCODE" class="logo-img" />
+    <div class="logo-container">
+      <img src="assets/hangcode_logo.png" class="logo-img" />
+      <strong>HANGCODE</strong>
+    </div>
     <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="solutions.html">Solutions</a>
-      <a href="docs.html">Docs</a>
-      <a href="contact.html">Contact</a>
+      <a href="#">Home</a>
+      <a href="#features">Solutions</a>
+      <a href="#preview">Preview</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="switches">
+      <label><input type="checkbox" id="themeToggle" /> 🌗</label>
+      <label><input type="checkbox" id="animToggle" /> ✨</label>
     </div>
   </nav>
 
   <header class="hero">
-    <h1>Welcome to HANGCODE</h1>
-    <p>AI-driven automation for enterprise. Never hang.</p>
-    <a href="solutions.html" class="cta">Explore Solutions</a>
+    <h1 class="gradient-text">Automate With Precision. Never Hang Again.</h1>
+    <p>AI + Sheets + Intelligence: One Engine, Infinite Control</p>
+    <a href="#contact" class="cta">Get Started</a>
   </header>
 
-  <section class="mock-dashboard">
-    <h2>📊 Real-Time Dashboard Preview</h2>
-    <div class="dashboard-preview">
-      <div class="card">CPU Load: <strong>72%</strong></div>
-      <div class="card">Sessions: <strong>312</strong></div>
-      <div class="card">AI Alerts: <strong>2 Active</strong></div>
+  <section id="features" class="section reveal">
+    <h2>🔍 HANGCODE Solutions</h2>
+    <div class="card-grid">
+      <div class="card">📁 Data Integrator</div>
+      <div class="card">🧠 AI Flagging</div>
+      <div class="card">📊 Smart Dashboard</div>
+      <div class="card">📬 Alert Systems</div>
     </div>
   </section>
 
+  <section id="preview" class="section reveal">
+    <h2>📊 Live Monitoring Panel (Mock)</h2>
+    <div class="dashboard">
+      <div class="card stat">Active Wards: <strong>14</strong></div>
+      <div class="card stat">Total Doses: <strong>89,230</strong></div>
+      <div class="card stat">Overdue Alerts: <strong>7</strong></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt reveal">
+    <h2>💬 Talk to Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Your Email" />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
   <footer>
-    &copy; 2025 HANGCODE • Precision Automation
+    <p>&copy; 2025 HANGCODE • Built for Hospitals, Labs & Enterprises • Never Hang</p>
   </footer>
-  <div class="toggle-container">
-    <label><input type="checkbox" id="animationToggle" /> Disable Animations</label>
-  </div>
 </body>
 </html>
