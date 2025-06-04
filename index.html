@@ -3,62 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HANGCODE – Mobile AI Minimal</title>
-  <meta name="description" content="Responsive AI-driven automation with mobile-first UX. Never Hang." />
+  <title>HANGCODE | Enterprise AI Automation</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/hangcode_logo.png" />
-  <script src="main.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body class="theme-light">
+<body>
+
   <nav class="navbar">
     <div class="nav-brand">
-      <img src="assets/hangcode_logo.png" class="logo-img" />
+      <img src="assets/logo.png" alt="HANGCODE" class="logo-img" />
       <span>HANGCODE</span>
     </div>
-    <button class="menu-toggle" id="menuBtn">☰</button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <div class="nav-links" id="navLinks">
       <a href="#">Home</a>
-      <a href="#solutions">Solutions</a>
-      <a href="#preview">Preview</a>
-      <a href="#contact">Contact</a>
+      <a href="#">Solutions</a>
+      <a href="#">Docs</a>
+      <a href="#">Contact</a>
     </div>
   </nav>
 
-  <header class="hero">
-    <h1 class="minimal-heading">Control. Automate. <span>Never Hang</span>.</h1>
-    <p class="subtext">Your enterprise AI system, now mobile-optimized.</p>
-  </header>
+  <section class="hero reveal">
+    <h1 class="minimal-heading">Accelerate with <span>HANGCODE</span></h1>
+    <p class="subtext">Enterprise AI automation and real-time insight dashboards</p>
+  </section>
 
-  <section id="solutions" class="section reveal">
-    <h2>Solutions</h2>
+  <section class="section alt reveal">
+    <h2>What We Offer</h2>
     <div class="card-grid">
-      <div class="card">⚙️ Workflow Automation</div>
-      <div class="card">📊 Dashboard Visualization</div>
-      <div class="card">📡 Alerts & Monitoring</div>
+      <div class="card">Automated Workflows</div>
+      <div class="card">Data Integration</div>
+      <div class="card">Smart Dashboards</div>
     </div>
   </section>
 
-  <section id="preview" class="section reveal">
-    <h2>Live Preview</h2>
+  <section class="section reveal">
+    <h2>Live Dashboard Preview</h2>
     <div class="preview-grid">
-      <div class="stat-box">Users: <strong>231</strong></div>
-      <div class="stat-box">Flags: <strong>4</strong></div>
-      <div class="stat-box">Last Sync: <strong>2m ago</strong></div>
+      <div class="stat-box">💡 99.9% Uptime</div>
+      <div class="stat-box">⚙️ Real-Time Sync</div>
+      <div class="stat-box">📊 Blazing Reports</div>
     </div>
   </section>
 
-  <section id="contact" class="section alt reveal">
-    <h2>Get in Touch</h2>
+  <section class="section alt reveal">
+    <h2>Contact Us</h2>
     <form>
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email" required />
-      <textarea placeholder="Message"></textarea>
-      <button type="submit">Send</button>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <textarea placeholder="Your Message" rows="4"></textarea>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 HANGCODE • Mobile Ready</p>
+    &copy; 2025 HANGCODE. Built with AI Precision.
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
