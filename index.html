@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HANG CODE – Futuristic Automation</title>
+  <meta name="description" content="Creative AI-powered automation platform with responsive design and real-time analytics.">
+  <meta property="og:title" content="HANG CODE – Futuristic Automation" />
+  <meta property="og:description" content="Creative AI-powered automation platform with responsive design, testimonials, and live analytics." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/adzry/hangcode/main/og-thumbnail.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://adzry.github.io/hangcode/" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/900/900797.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      scroll-behavior: smooth;
+      background: radial-gradient(ellipse at center, #0f172a 0%, #020617 100%);
+      color: white;
+    }
+    .glow-text {
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+    .floating {
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="font-sans">
+
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-gray-900 shadow-lg fixed top-0 w-full z-50">
+    <div class="text-2xl font-extrabold text-cyan-400 tracking-widest">HANG<span class="text-white">CODE</span></div>
+    <ul class="flex space-x-6 text-sm font-medium">
+      <li><a href="#home" class="hover:text-cyan-300 transition">Home</a></li>
+      <li><a href="#solutions" class="hover:text-cyan-300 transition">Solutions</a></li>
+      <li><a href="#contact" class="hover:text-cyan-300 transition">Contact</a></li>
+      <li><a href="about.html" class="hover:text-cyan-300 transition">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-cyan-600/80 to-blue-800/80 backdrop-blur-sm pt-20 px-4">
+    <div class="max-w-3xl floating fade-in">
+      <h1 class="text-5xl md:text-7xl font-black mb-6 glow-text">Revolutionize Your Business with AI</h1>
+      <p class="text-lg text-gray-300 mb-8">Experience the future of automation, built for visionary leaders.</p>
+      <a href="#solutions" class="bg-gradient-to-r from-cyan-400 to-blue-500 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform">Start Free Trial</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="solutions" class="py-24 px-6 bg-gray-900 text-center">
+    <h2 class="text-4xl font-bold mb-12 text-cyan-300 fade-in">Our Core Capabilities</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-cyan-500/40 transition-all fade-in">
+        <h3 class="text-2xl font-semibold mb-3">Intelligent Automation</h3>
+        <p class="text-gray-400">Eliminate manual tasks with smart workflows and logic-driven actions.</p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-blue-500/40 transition-all fade-in">
+        <h3 class="text-2xl font-semibold mb-3">Seamless Integration</h3>
+        <p class="text-gray-400">Effortlessly connect with your tools – Google Sheets, APIs, and more.</p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-indigo-500/40 transition-all fade-in">
+        <h3 class="text-2xl font-semibold mb-3">Live Analytics</h3>
+        <p class="text-gray-400">Access real-time dashboards to power insight-driven decisions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="py-16 bg-gray-800 px-6 text-center">
+    <h3 class="text-3xl font-bold text-white mb-8">Trusted by Innovators</h3>
+    <blockquote class="text-gray-300 max-w-xl mx-auto italic">“HANG CODE transformed how we automate our workflows — intuitive, powerful, and beautifully designed.”<br><span class="text-cyan-400 font-semibold mt-4 block">— TechOps Lead, Synexon Corp</span></blockquote>
+  </section>
+
+  <!-- Contact CTA Section -->
+  <section class="bg-gradient-to-r from-blue-900 to-gray-900 py-16 px-8 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to lead the AI evolution?</h2>
+    <a href="#contact" class="mt-4 inline-block bg-cyan-500 hover:bg-cyan-400 text-black px-6 py-3 rounded-xl shadow-xl font-medium transition-transform hover:scale-105">Talk to Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="text-center py-6 bg-gray-950 text-sm text-gray-400 border-t border-gray-800">
+    <p class="mb-2">Built by visionaries for the future of automation.</p>
+    <p>© 2025 HANG CODE. All rights reserved.</p>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
+          class="fixed bottom-6 right-6 bg-cyan-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-cyan-600 transition">
+    ↑ Top
+  </button>
+
+  <!-- Animation Trigger Script -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
