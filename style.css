@@ -1,0 +1,65 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  transition: background 0.5s, color 0.5s;
+}
+.theme-light {
+  background: #f9f9f9;
+  color: #111;
+}
+.theme-dark {
+  background: #111;
+  color: #f9f9f9;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav a, nav button {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+  color: white;
+}
+.btn-primary {
+  background: white;
+  color: #111;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+.card {
+  background: #fff;
+  color: #000;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+}
