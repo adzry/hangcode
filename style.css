@@ -1,6 +1,5 @@
 
-/* HANGCODE RUNWAY-STYLE THEME */
-
+/* Updated HANGCODE Runway Theme */
 :root {
   --accent: linear-gradient(90deg, #06b6d4, #3b82f6);
   --text: #1e1e1e;
@@ -18,13 +17,12 @@ body {
   color: var(--text);
   line-height: 1.6;
   font-size: 16px;
-  transition: background 0.3s ease, color 0.3s ease;
 }
 
-header.hero {
+.hero {
   padding: 6rem 2rem;
   text-align: center;
-  background: var(--bg);
+  background: linear-gradient(to bottom, #f0f4ff, #ffffff);
 }
 
 .minimal-heading {
@@ -33,200 +31,25 @@ header.hero {
   background: var(--accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem;
 }
 
-.subtext {
-  font-size: 1.125rem;
+.rating-badge {
+  font-size: 1rem;
+  margin-top: 0.5rem;
   color: #555;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.25rem 2rem;
-  background: #fff;
-  border-bottom: 1px solid #e5e7eb;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav-links a {
-  margin: 0 1rem;
-  text-decoration: none;
-  font-weight: 500;
-  color: var(--text);
-  position: relative;
-}
-
-.nav-links a::after {
-  content: '';
-  display: block;
-  height: 2px;
-  width: 0;
-  background: #06b6d4;
-  transition: width 0.3s ease;
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-.card-grid, .preview-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.card, .stat-box {
-  padding: 2rem;
-  background: #fff;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  width: min(300px, 90%);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-}
-
-.section {
-  padding: 6rem 2rem;
-  background: var(--bg-alt);
-  text-align: center;
-}
-
-.section.alt {
-  background: #fff;
-}
-
-form {
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-input, textarea {
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-button {
-  background: #06b6d4;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border: none;
+.cta-button {
+  display: inline-block;
+  background: #f59e0b;
+  color: #000;
   font-weight: bold;
-  font-size: 1rem;
+  padding: 1rem 2rem;
   border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  text-decoration: none;
 }
-
-button:hover {
-  background: #0891b2;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
-  color: #777;
-  background: var(--bg-alt);
-}
-
-@media (max-width: 768px) {
-  .card-grid, .preview-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: white;
-    padding: 1rem 2rem;
-    border-top: 1px solid #e5e7eb;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-  }
-}
-
-
-/* ✨ Additional Enhancements for Runway-Style */
-.hero .minimal-heading span {
-  background: linear-gradient(90deg, #3b82f6, #9333ea);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.navbar .logo-img {
-  height: 40px;
-  margin-right: 0.5rem;
-}
-
-.section h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  background: var(--accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-blockquote {
-  background: #f1f5f9;
-  padding: 1rem 1.5rem;
-  border-left: 4px solid #06b6d4;
-  margin: 2rem auto;
-  max-width: 600px;
-  font-style: italic;
-  color: #555;
-}
-
-.feature-list {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  margin-top: 2rem;
-}
-
-.feature {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  text-align: left;
-}
-
-.feature h3 {
-  margin-top: 0;
-  font-size: 1.25rem;
-  color: #06b6d4;
-}
-
-.feature p {
-  margin: 0.5rem 0 0;
-  color: #444;
+.cta-button:hover {
+  background: #d97706;
 }
