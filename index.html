@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HANGCODE | Enterprise AI Automation</title>
+  <title>HANGCODE | Enterprise AI</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 
@@ -17,49 +16,65 @@
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <div class="nav-links" id="navLinks">
       <a href="#">Home</a>
-      <a href="#">Solutions</a>
-      <a href="#">Docs</a>
-      <a href="#">Contact</a>
+      <a href="#features">Features</a>
+      <a href="#insights">Insights</a>
+      <a href="#contact">Contact</a>
     </div>
   </nav>
 
-  <section class="hero reveal">
-    <h1 class="minimal-heading">Accelerate with <span>HANGCODE</span></h1>
-    <p class="subtext">Enterprise AI automation and real-time insight dashboards</p>
-  </section>
+  <header class="hero">
+    <h1 class="minimal-heading">AI Automation. <span>Never Hang.</span></h1>
+    <p class="subtext">Build intelligent workflows, integrate smart data, and scale with confidence.</p>
+  </header>
 
-  <section class="section alt reveal">
-    <h2>What We Offer</h2>
-    <div class="card-grid">
-      <div class="card">Automated Workflows</div>
-      <div class="card">Data Integration</div>
-      <div class="card">Smart Dashboards</div>
+  <section class="section" id="features">
+    <h2>Platform Features</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <h3>⚙️ Automation Core</h3>
+        <p>Trigger workflows, manage pipelines, and reduce manual ops instantly.</p>
+      </div>
+      <div class="feature">
+        <h3>📊 Data Dashboards</h3>
+        <p>Real-time insights visualized through intelligent dashboards.</p>
+      </div>
+      <div class="feature">
+        <h3>🔌 Seamless Integration</h3>
+        <p>Connect your apps, APIs, and services with zero downtime risk.</p>
+      </div>
     </div>
   </section>
 
-  <section class="section reveal">
-    <h2>Live Dashboard Preview</h2>
+  <section class="section alt" id="insights">
+    <h2>Why HANGCODE?</h2>
+    <blockquote>
+      "With HANGCODE, our deployment speed increased by 45% while reducing error rates to nearly zero."
+    </blockquote>
     <div class="preview-grid">
-      <div class="stat-box">💡 99.9% Uptime</div>
-      <div class="stat-box">⚙️ Real-Time Sync</div>
-      <div class="stat-box">📊 Blazing Reports</div>
+      <div class="stat-box">💡 100% Automation Coverage</div>
+      <div class="stat-box">⚙️ Zero Downtime Deploys</div>
+      <div class="stat-box">📈 3x Operational Efficiency</div>
     </div>
   </section>
 
-  <section class="section alt reveal">
+  <section class="section" id="contact">
     <h2>Contact Us</h2>
     <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <textarea placeholder="Your Message" rows="4"></textarea>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
 
   <footer>
-    &copy; 2025 HANGCODE. Built with AI Precision.
+    &copy; 2025 HANGCODE. Engineered for the future.
   </footer>
 
-  <script src="main.js"></script>
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
